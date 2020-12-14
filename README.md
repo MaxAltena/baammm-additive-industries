@@ -20,7 +20,7 @@ You will also see any lint errors in the console.
 
 ### `npm build`
 
-Builds the storybook for production to the `storybook-static` folder.\
+Builds the storybook for production to the `storybook-static` folder.
 
 The build is minified and the filenames include the hashes.\
 Your storybook is ready to be deployed!
