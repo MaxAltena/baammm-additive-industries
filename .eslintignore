@@ -1,0 +1,17 @@
+build
+storybook-static
+node_modules
+
+*.ico
+*.svg
+*.map
+*.txt
+*.png
+*.jpg
+*.pdf
+*.xml
+*.cache
+.eslintignore
+.prettierignore
+.gitignore
+.editorconfig

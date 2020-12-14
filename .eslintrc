@@ -1,0 +1,62 @@
+{
+	"parser": "@typescript-eslint/parser",
+	"extends": [
+		"react-app",
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:prettier/recommended",
+		"prettier/@typescript-eslint",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:@typescript-eslint/eslint-recommended"
+	],
+	"plugins": ["react", "prettier"],
+	"parserOptions": {
+		"ecmaVersion": 2020,
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"sourceType": "module"
+	},
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+	"rules": {
+		"linebreak-style": ["error", "unix"],
+		"no-console": "warn",
+		"camelcase": "error",
+		"no-unused-vars": ["warn", { "argsIgnorePattern": "^__", "varsIgnorePattern": "^__" }],
+		"no-case-declarations": "error",
+		"no-undef": "off",
+		"no-useless-escape": "error",
+		"no-redeclare": "error",
+		"no-prototype-builtins": "error",
+		"no-empty": "error",
+		"no-constant-condition": "error",
+		"no-func-assign": "error",
+		"no-use-before-define": "off",
+		"@typescript-eslint/no-explicit-any": "error",
+		"@typescript-eslint/no-empty-interface": "error",
+		"@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^__", "varsIgnorePattern": "^__" }],
+		"prettier/prettier": [
+			"error",
+			{
+				"trailingComma": "all",
+				"arrowParens": "always",
+				"bracketSpacing": true,
+				"printWidth": 120,
+				"semi": true,
+				"singleQuote": true,
+				"tabWidth": 2,
+				"useTabs": true,
+				"endOfLine": "lf"
+			}
+		]
+	}
+}
