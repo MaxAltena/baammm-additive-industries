@@ -2,7 +2,7 @@ import React from 'react';
 import { linkTo } from '@storybook/addon-links';
 
 import { LoginProps } from './types';
-import { StyledPage, StyledTitle, StyledLink } from './styles';
+import { StyledPage, StyledImage, StyledTitle, StyledLink } from './styles';
 
 /**
  * Machine overview page
@@ -10,6 +10,7 @@ import { StyledPage, StyledTitle, StyledLink } from './styles';
 export const Login: React.FC<LoginProps> = () => {
 	return (
 		<StyledPage>
+			<StyledImage />
 			<StyledTitle>Login</StyledTitle>
 			<StyledLink onClick={linkTo('Pages/Machine overview')}>Log me in please</StyledLink>
 		</StyledPage>

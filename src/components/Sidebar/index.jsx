@@ -1,10 +1,15 @@
 import React from 'react';
 
-import { StyledDiv } from './styles';
+import { StyledDiv, StyledVector } from './styles';
 
 /**
  * Sidebar
  */
 export const Sidebar = () => {
-	return <StyledDiv>Sidebar</StyledDiv>;
+	return (
+		<StyledDiv>
+			<StyledVector />
+			Sidebar
+		</StyledDiv>
+	);
 };
