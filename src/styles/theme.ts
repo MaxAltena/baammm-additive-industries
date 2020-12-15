@@ -1,7 +1,16 @@
 export const theme = {
 	unit: 8,
 	fonts: {
-		default: `'Open Sans'`,
+		default: `'Open Sans', sans-serif`,
+		openSans: `'Open Sans', sans-serif`,
+		text: `'Open Sans', sans-serif`,
+		frankNew: `'Frank New', 'Open Sans', sans-serif`,
+		heading: `'Frank New', 'Open Sans', sans-serif`,
+	},
+	transition: {
+		default: 'all 200ms ease-in-out',
+		timing: 'ease-in-out',
+		speed: '200ms',
 	},
 	colors: {
 		primary: {
@@ -74,6 +83,11 @@ export const theme = {
 		'2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
 		inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
 		none: '0 0 #000000',
+	},
+	icon: {
+		stroke: {
+			width: '2px',
+		},
 	},
 };
 
