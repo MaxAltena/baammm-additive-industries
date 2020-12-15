@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 
 export const StyledExampleButton = styled.button`
-	font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Frank New', 'Open Sans', sans-serif;
 	font-weight: 700;
 	border: 0;
-	border-radius: ${(props) => props.theme.borderRadius.rounded};
+	border-radius: ${(props) => props.theme.borderRadius.default};
 	cursor: pointer;
 	display: inline-block;
 	line-height: 1;
 
 	&.primary {
 		color: white;
-		background-color: ${(props) => props.theme.colors.primary};
+		background-color: ${(props) => props.theme.colors.primary.default};
 	}
 	&.secondary {
 		color: #333;
