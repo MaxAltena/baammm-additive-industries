@@ -1,10 +1,17 @@
 import React from 'react';
+import { Sidebartab } from '../SideBarTab';
 
-import { StyledDiv } from './styles';
+import { SideBarStyledDiv } from './styles';
+import { StyledVector } from './styles';
 
 /**
  * Sidebar
  */
 export const Sidebar = () => {
-	return <StyledDiv>Sidebar</StyledDiv>;
+	return (
+		<SideBarStyledDiv>
+			<StyledVector />
+			<Sidebartab name="Tab1" />
+		</SideBarStyledDiv>
+	);
 };
