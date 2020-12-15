@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledExampleButton = styled.button`
-	font-family: 'Frank New', 'Open Sans', sans-serif;
+	font-family: ${(props) => props.theme.fonts.default};
 	font-weight: 700;
 	border: 0;
 	border-radius: ${(props) => props.theme.borderRadius.default};
