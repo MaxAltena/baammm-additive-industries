@@ -3,7 +3,8 @@
 	"version": "1.0.0",
 	"private": true,
 	"contributors": [
-		"Max Altena <max@maxaltena> (https://maxaltena.com/)"
+		"Max Altena <max@maxaltena> (https://maxaltena.com/)",
+		"Aleksandar Georgiev"
 	],
 	"scripts": {
 		"build": "npm run build-storybook",
