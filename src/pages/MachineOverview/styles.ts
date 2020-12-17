@@ -5,7 +5,8 @@ export const StyledPage = styled.div`
 	min-height: 100vh;
 	width: 100%;
 	font-family: ${(props) => props.theme.fonts.default};
-	background-color: ${(props) => props.theme.colors.background};
+	background-color: ${(props) => props.theme.background};
+	display: flex;
 `;
 
 export const StyledTitle = styled.h1`

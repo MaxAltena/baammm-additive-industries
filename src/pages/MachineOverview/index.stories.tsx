@@ -14,5 +14,5 @@ export default {
 
 const Template: Story<MachineOverviewProps> = (args) => <MachineOverview {...args} />;
 
-export const Basic = Template.bind({});
-Basic.args = {};
+export const Standard = Template.bind({});
+Standard.args = {};
