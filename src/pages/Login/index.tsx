@@ -21,7 +21,7 @@ export const Login: React.FC<LoginProps> = ({ withImage = true, withOptions = tr
 	return (
 		<StyledPage>
 			{withImage && <StyledLoginImage />}
-			<StyledForm>
+			<StyledForm onSubmit={(event) => event.preventDefault()}>
 				<StyledLogo />
 
 				<StyledInput type="email" placeholder="Email" />

@@ -14,7 +14,7 @@ export const StyledLoginImage = styled.div`
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: left center;
-	background-blend-mode: soft-light;
+	background-blend-mode: multiply;
 	clip-path: ellipse(100% 200% at 0% 50%);
 	min-height: 100vh;
 	min-width: 10vw;
