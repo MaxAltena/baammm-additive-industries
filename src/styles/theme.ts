@@ -58,6 +58,10 @@ export const theme = {
 			default: '#fcc517',
 			hover: '#f7be3d',
 		},
+		onAccent: {
+			default: '#ffffff',
+			hover: '#ffffff',
+		},
 		link: {
 			default: '#506ed5',
 			hover: '#16153b',

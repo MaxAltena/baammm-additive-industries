@@ -16,3 +16,8 @@ const Template: Story<LoginProps> = (args) => <Login {...args} />;
 
 export const Basic = Template.bind({});
 Basic.args = {};
+
+export const WithoutImage = Template.bind({});
+WithoutImage.args = {
+	withImage: false,
+};

@@ -1,2 +1,6 @@
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface LoginProps {}
+export interface LoginProps {
+	/**
+	 * Show image to the side of the login form
+	 */
+	withImage?: boolean;
+}

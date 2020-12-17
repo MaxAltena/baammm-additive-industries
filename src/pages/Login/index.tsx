@@ -2,17 +2,41 @@ import React from 'react';
 import { linkTo } from '@storybook/addon-links';
 
 import { LoginProps } from './types';
-import { StyledPage, StyledImage, StyledTitle, StyledLink } from './styles';
+import {
+	StyledPage,
+	StyledLoginImage,
+	StyledContainer,
+	StyledButton,
+	StyledLogo,
+	StyledInput,
+	StyledLink,
+	StyledBottomForm,
+	StyledCheckbox,
+} from './styles';
 
 /**
- * Machine overview page
+ * The login page for the Additive Industries product
  */
-export const Login: React.FC<LoginProps> = () => {
+export const Login: React.FC<LoginProps> = ({ withImage = true }: LoginProps) => {
 	return (
 		<StyledPage>
-			<StyledImage />
-			<StyledTitle>Login</StyledTitle>
-			<StyledLink onClick={linkTo('Pages/Machine overview')}>Log me in please</StyledLink>
+			{withImage && <StyledLoginImage />}
+			<StyledContainer>
+				<StyledLogo />
+
+				<StyledInput type="email" placeholder="Email" />
+				<StyledInput type="password" placeholder="Password" />
+
+				<StyledBottomForm>
+					<span>
+						<StyledCheckbox type="checkbox" id="rememberMe" />
+						<label htmlFor="rememberMe">Remember me</label>
+					</span>
+					<StyledLink>Forgot password</StyledLink>
+				</StyledBottomForm>
+
+				<StyledButton onClick={linkTo('Pages/Machine overview')}>Login</StyledButton>
+			</StyledContainer>
 		</StyledPage>
 	);
 };
