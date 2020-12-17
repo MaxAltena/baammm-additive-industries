@@ -5,7 +5,7 @@ import { LoginProps } from './types';
 import {
 	StyledPage,
 	StyledLoginImage,
-	StyledContainer,
+	StyledForm,
 	StyledButton,
 	StyledLogo,
 	StyledInput,
@@ -17,26 +17,30 @@ import {
 /**
  * The login page for the Additive Industries product
  */
-export const Login: React.FC<LoginProps> = ({ withImage = true }: LoginProps) => {
+export const Login: React.FC<LoginProps> = ({ withImage = true, withOptions = true }: LoginProps) => {
 	return (
 		<StyledPage>
 			{withImage && <StyledLoginImage />}
-			<StyledContainer>
+			<StyledForm>
 				<StyledLogo />
 
 				<StyledInput type="email" placeholder="Email" />
 				<StyledInput type="password" placeholder="Password" />
 
-				<StyledBottomForm>
-					<span>
-						<StyledCheckbox type="checkbox" id="rememberMe" />
-						<label htmlFor="rememberMe">Remember me</label>
-					</span>
-					<StyledLink>Forgot password</StyledLink>
-				</StyledBottomForm>
+				{withOptions && (
+					<StyledBottomForm>
+						<span>
+							<StyledCheckbox type="checkbox" id="rememberMe" />
+							<label htmlFor="rememberMe">Remember me</label>
+						</span>
+						<StyledLink>Forgot password</StyledLink>
+					</StyledBottomForm>
+				)}
 
-				<StyledButton onClick={linkTo('Pages/Machine overview')}>Login</StyledButton>
-			</StyledContainer>
+				<StyledButton type="submit" onClick={linkTo('Pages/Machine overview')}>
+					Login
+				</StyledButton>
+			</StyledForm>
 		</StyledPage>
 	);
 };

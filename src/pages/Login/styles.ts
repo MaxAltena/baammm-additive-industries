@@ -21,7 +21,7 @@ export const StyledLoginImage = styled.div`
 	width: 50vw;
 `;
 
-export const StyledContainer = styled.div`
+export const StyledForm = styled.form`
 	min-width: 50%;
 	flex-grow: 1;
 	display: flex;

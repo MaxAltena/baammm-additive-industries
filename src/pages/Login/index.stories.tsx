@@ -14,10 +14,21 @@ export default {
 
 const Template: Story<LoginProps> = (args) => <Login {...args} />;
 
-export const Basic = Template.bind({});
-Basic.args = {};
+export const Standard = Template.bind({});
+Standard.args = {};
 
 export const WithoutImage = Template.bind({});
 WithoutImage.args = {
 	withImage: false,
+};
+
+export const WithoutOptions = Template.bind({});
+WithoutOptions.args = {
+	withOptions: false,
+};
+
+export const FormOnly = Template.bind({});
+FormOnly.args = {
+	withImage: false,
+	withOptions: false,
 };
