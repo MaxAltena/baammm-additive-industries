@@ -1,9 +1,27 @@
 import { Meta } from '@storybook/addon-docs/blocks';
+import { StyledLogo } from './pages/Login/styles';
+import { ThemeProvider } from 'styled-components';
+import { themeAdditiveIndustries } from './styles';
 
 <Meta title="Introduction" />
 
+<ThemeProvider theme={themeAdditiveIndustries}>
+	<StyledLogo />
+</ThemeProvider>
+
 # Welcome to the Storybook for Additive Industries
 
-> Even cooler quote here
+Storybook is a system that allows designers and developers to view and share components and pages from a design interactively.
 
-This should be some sort of description of the project and maybe some background?
+We, BAAMMM💥, a group of students from Fontys School of ICT, have created this Storybook repository to share various components of the design
+created for Additive Industries, during our minor of Interaction Design at the same school.
+
+Our group of Fontys students has been tasked with designing a solution for Additive Industries’ wish to allow users to monitor their 3D printers
+remotely.
+Additive Industries builds industrial 3D printers, of which the most popular option is to print metal parts.
+
+We have come up with a solution for both machine operators and managers in the form of a dashboard.
+This dashboard allows users to easily access the status of all Additive Industries metal printers and be informed when a printer requires
+attention.
+In addition to this, it also contains a global planning tool that allows new print jobs to be scheduled and for the workload to be divided across
+the various printers.
