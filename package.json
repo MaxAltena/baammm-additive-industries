@@ -4,7 +4,8 @@
 	"private": true,
 	"contributors": [
 		"Max Altena <max@maxaltena> (https://maxaltena.com/)",
-		"Aleksandar Georgiev"
+		"Aleksandar Georgiev",
+		"Max Korlaar"
 	],
 	"scripts": {
 		"build": "npm run build-storybook",
