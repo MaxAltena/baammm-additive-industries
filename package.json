@@ -2,8 +2,9 @@
 	"name": "baammm-additive-industries",
 	"version": "1.0.0",
 	"private": true,
+	"author": "BAAMMM",
 	"contributors": [
-		"Max Altena <max@maxaltena> (https://maxaltena.com/)",
+		"Max Altena <max@maxaltena.com> (https://maxaltena.com/)",
 		"Aleksandar Georgiev",
 		"Max Korlaar"
 	],
