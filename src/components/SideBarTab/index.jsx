@@ -14,3 +14,8 @@ export const Sidebartab = ({ ...props }) => {
 		</SideBarTabStyledDiv>
 	);
 };
+
+Sidebartab.propTypes = {
+	icon: PropTypes.any,
+	name: PropTypes.string,
+};
