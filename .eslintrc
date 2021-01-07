@@ -28,7 +28,7 @@
 		}
 	},
 	"rules": {
-		"linebreak-style": ["error", "unix"],
+		"linebreak-style": ["error", "auto"],
 		"no-console": "warn",
 		"camelcase": "error",
 		"no-unused-vars": ["warn", { "argsIgnorePattern": "^__", "varsIgnorePattern": "^__" }],
