@@ -27,6 +27,5 @@
 	"prettier.semi": true,
 	"prettier.singleQuote": true,
 	"prettier.tabWidth": 2,
-	"prettier.useTabs": true,
-	"prettier.endOfLine": "auto"
+	"prettier.useTabs": true
 }
