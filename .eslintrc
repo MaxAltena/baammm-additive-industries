@@ -28,7 +28,6 @@
 		}
 	},
 	"rules": {
-		"linebreak-style": ["error", "auto"],
 		"no-console": "warn",
 		"camelcase": "error",
 		"no-unused-vars": ["warn", { "argsIgnorePattern": "^__", "varsIgnorePattern": "^__" }],
@@ -56,8 +55,7 @@
 				"semi": true,
 				"singleQuote": true,
 				"tabWidth": 2,
-				"useTabs": true,
-				"endOfLine": "auto"
+				"useTabs": true
 			}
 		]
 	}
