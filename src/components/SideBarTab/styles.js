@@ -6,4 +6,5 @@ export const SideBarTabStyledDiv = styled.div`
 	color: white;
 	width: 300px;
 	height: 48px;
+	margin-left: -8px;
 `;
