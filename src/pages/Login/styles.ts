@@ -3,13 +3,13 @@ import styled from 'styled-components';
 export const StyledPage = styled.div`
 	min-height: 100vh;
 	width: 100%;
-	font-family: ${(props) => props.theme.fonts.default};
+	font-family: ${(props) => props.theme.fonts.DEFAULT};
 	background-color: ${(props) => props.theme.background};
 	display: flex;
 `;
 
 export const StyledLoginImage = styled.div`
-	background-color: ${(props) => props.theme.colors.primary.default};
+	background-color: ${(props) => props.theme.colors.primary.DEFAULT};
 	background-image: url('/assets/images/login.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -43,13 +43,13 @@ export const StyledLogo = styled.div`
 `;
 
 export const StyledButton = styled.button`
-	background: ${(props) => props.theme.colors.accent.default};
-	color: ${(props) => props.theme.colors.onAccent.default};
-	border-radius: ${(props) => props.theme.borderRadius.default};
+	background: ${(props) => props.theme.colors.accent.DEFAULT};
+	color: ${(props) => props.theme.colors.onAccent.DEFAULT};
+	border-radius: ${(props) => props.theme.borderRadius.DEFAULT};
 	border: none;
 	cursor: pointer;
 	padding: ${(props) => `${props.theme.unit * 1}px ${props.theme.unit * 2}px`};
-	transition: ${(props) => props.theme.transition.default};
+	transition: ${(props) => props.theme.transition.DEFAULT};
 	margin-top: ${(props) => `${props.theme.unit * 4}px`};
 
 	&:hover,
@@ -63,7 +63,7 @@ export const StyledButton = styled.button`
 export const StyledInput = styled.input`
 	border: none;
 	border-bottom-width: 2px;
-	border-bottom-color: ${(props) => props.theme.colors.primary.default};
+	border-bottom-color: ${(props) => props.theme.colors.primary.DEFAULT};
 	border-bottom-style: solid;
 	padding: ${(props) => `${props.theme.unit * 1.5}px ${props.theme.unit * 2}px`};
 	margin: ${(props) => `${props.theme.unit * 2}px 0`};
@@ -87,9 +87,9 @@ export const StyledCheckbox = styled.input`
 `;
 
 export const StyledLink = styled.a`
-	color: ${(props) => props.theme.colors.link.default};
+	color: ${(props) => props.theme.colors.link.DEFAULT};
 	text-decoration: underline;
-	transition: ${(props) => props.theme.transition.default};
+	transition: ${(props) => props.theme.transition.DEFAULT};
 	cursor: pointer;
 
 	&:hover,

@@ -15,8 +15,6 @@ module.exports = async ({ config }) => {
 		include: path.resolve(__dirname, '../'),
 	});
 
-	config.resolve.modules = [...(config.resolve.modules || []), path.resolve(__dirname, './')];
-
 	// Allow for README.md to be included inside of the README.stories.mdx file while being outside of the src
 	config.resolve.plugins.splice(
 		config.resolve.plugins.findIndex(({ constructor }) => constructor && constructor.name === 'ModuleScopePlugin'),

@@ -21,7 +21,7 @@
 		"prettier:fix": "prettier --check --write .",
 		"sort-package-json": "sort-package-json",
 		"start": "npm run storybook",
-		"storybook": "start-storybook -p 6006 -c .storybook -s public"
+		"storybook": "start-storybook -p 6006 -c .storybook -s public --no-manager-cache"
 	},
 	"husky": {
 		"hooks": {
@@ -58,9 +58,11 @@
 		"@storybook/addon-actions": "^6.1.11",
 		"@storybook/addon-essentials": "^6.1.11",
 		"@storybook/addon-links": "^6.1.11",
+		"@storybook/addons": "^6.1.11",
 		"@storybook/node-logger": "^6.1.11",
 		"@storybook/preset-create-react-app": "^3.1.5",
 		"@storybook/react": "^6.1.11",
+		"@storybook/theming": "^6.1.11",
 		"@types/node": "^14.14.20",
 		"@types/react": "^17.0.0",
 		"@types/react-dom": "^17.0.0",

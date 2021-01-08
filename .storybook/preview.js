@@ -4,6 +4,7 @@ import { Reset } from 'styled-reset';
 import { Normalize } from 'styled-normalize';
 import { ThemeProvider } from 'styled-components';
 
+import theme from './theme';
 import { Global, themeAdditiveIndustries, themes } from '../src/styles';
 
 export const decorators = [
@@ -22,4 +23,7 @@ export const decorators = [
 
 export const parameters = {
 	actions: { argTypesRegex: '^on[A-Z].*' },
+	docs: {
+		theme,
+	},
 };

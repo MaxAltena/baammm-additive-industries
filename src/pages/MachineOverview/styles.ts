@@ -4,7 +4,7 @@ import { Bell } from '@styled-icons/feather';
 export const StyledPage = styled.div`
 	min-height: 100vh;
 	width: 100%;
-	font-family: ${(props) => props.theme.fonts.default};
+	font-family: ${(props) => props.theme.fonts.DEFAULT};
 	background-color: ${(props) => props.theme.background};
 	display: flex;
 `;
@@ -16,7 +16,7 @@ export const StyledTitle = styled.h1`
 `;
 
 export const StyledBell = styled(Bell)`
-	color: ${(props) => props.theme.colors.secondary.default};
+	color: ${(props) => props.theme.colors.secondary.DEFAULT};
 	padding: ${(props) => `${props.theme.unit}px`};
 	margin: ${(props) => `${props.theme.unit}px`};
 	width: 48px;
@@ -25,9 +25,9 @@ export const StyledBell = styled(Bell)`
 `;
 
 export const StyledLink = styled.a`
-	color: ${(props) => props.theme.colors.link.default};
+	color: ${(props) => props.theme.colors.link.DEFAULT};
 	text-decoration: underline;
-	transition: ${(props) => props.theme.transition.default};
+	transition: ${(props) => props.theme.transition.DEFAULT};
 	cursor: pointer;
 
 	&:hover,
