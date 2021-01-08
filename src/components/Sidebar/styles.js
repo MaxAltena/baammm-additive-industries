@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const SideBarStyledDiv = styled.div`
-	font-family: ${(props) => props.theme.fonts.default};
+	font-family: ${(props) => props.theme.fonts.DEFAULT};
 	color: white;
-	background: ${(props) => props.theme.colors.primary.default};
+	background: ${(props) => props.theme.colors.primary.DEFAULT};
 	padding: ${(props) => `${props.theme.unit}px`};
 	width: 300px;
 	height: 100vh;

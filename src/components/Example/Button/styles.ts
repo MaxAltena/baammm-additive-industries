@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 
 export const StyledExampleButton = styled.button`
-	font-family: ${(props) => props.theme.fonts.default};
+	font-family: ${(props) => props.theme.fonts.DEFAULT};
 	font-weight: 700;
 	border: 0;
-	border-radius: ${(props) => props.theme.borderRadius.default};
+	border-radius: ${(props) => props.theme.borderRadius.DEFAULT};
 	cursor: pointer;
 	display: inline-block;
 	line-height: 1;
 
 	&.primary {
 		color: white;
-		background-color: ${(props) => props.theme.colors.primary.default};
+		background-color: ${(props) => props.theme.colors.primary.DEFAULT};
 	}
 	&.secondary {
 		color: #333;

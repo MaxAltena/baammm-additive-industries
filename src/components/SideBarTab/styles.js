@@ -6,7 +6,7 @@ import { Calendar } from '@styled-icons/feather';
 
 export const SideBarTabStyledDiv = styled.div`
 	font-family: 'Open Sans';
-	background: ${(props) => `${props.theme.colors.primary.default}`};
+	background: ${(props) => `${props.theme.colors.primary.DEFAULT}`};
 	color: white;
 	width: 300px;
 	height: 48px;
