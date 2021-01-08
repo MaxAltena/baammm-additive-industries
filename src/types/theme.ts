@@ -47,9 +47,14 @@ export interface Theme {
 			A700?: string;
 		};
 		background: string;
-		text: string;
+		text: {
+			DEFAULT: string;
+			light: string;
+			lighter: string;
+		};
 		status: {
 			red: string;
+			orange: string;
 			blue: string;
 			green: string;
 		};

@@ -14,7 +14,7 @@ export const StyledButton = styled.button`
 	}
 
 	&.secondary {
-		color: ${(props) => props.theme.colors.text};
+		color: ${(props) => props.theme.colors.text.light};
 		background-color: #fff;
 		box-shadow: 0 0 12px #00000029;
 	}
