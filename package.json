@@ -21,7 +21,7 @@
 		"prettier:fix": "prettier --check --write .",
 		"sort-package-json": "sort-package-json",
 		"start": "npm run storybook",
-		"storybook": "start-storybook -p 6006 -c .storybook -s public --no-manager-cache"
+		"storybook": "start-storybook -p 6006 -c .storybook -s public"
 	},
 	"husky": {
 		"hooks": {
