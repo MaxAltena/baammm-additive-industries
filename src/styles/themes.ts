@@ -1,3 +1,5 @@
+import { withTheme } from 'styled-components';
+
 export interface Theme {
 	name: string;
 	unit: number;
@@ -321,7 +323,7 @@ export const themeCustom: Theme = {
 	},
 	icon: {
 		stroke: {
-			width: '1px',
+			width: '1px #ffffff',
 		},
 	},
 };

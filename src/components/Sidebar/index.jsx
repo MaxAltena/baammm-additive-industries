@@ -11,7 +11,10 @@ export const Sidebar = () => {
 	return (
 		<SideBarStyledDiv>
 			<StyledVector />
-			<Sidebartab name="Tab1" />
+			<Sidebartab title="Dashboard" imgSource="homeicon" />
+			<Sidebartab title="Machines" imgSource="machines" />
+			<Sidebartab title="Planning" imgSource="planning" />
+			<Sidebartab title="History" imgSource="history" />
 		</SideBarStyledDiv>
 	);
 };
