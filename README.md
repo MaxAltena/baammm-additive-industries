@@ -1,4 +1,4 @@
-![Header image with Additive Industries logo and BAAMMM logo in the bottom](https://i.gyazo.com/afd3945f36445ebb977d4f48e21e08a9.png)
+![Header image with Additive Industries logo in the center and BAAMMM logo in the bottom](https://i.gyazo.com/afd3945f36445ebb977d4f48e21e08a9.png)
 
 # [BAAMMM – Additive Industries][link:baammm-additive-industries]
 
@@ -6,7 +6,7 @@
 
 ###### ![Version](https://img.shields.io/github/package-json/v/MaxAltena/baammm-additive-industries) ![Issues](https://img.shields.io/github/issues/MaxAltena/baammm-additive-industries) ![Pull requests](https://img.shields.io/github/issues-pr/MaxAltena/baammm-additive-industries)
 
-> Cool quote
+> 🗃 BAAMMM Additive Industries Design System
 
 This is where the description should be.
 
