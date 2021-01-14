@@ -24,4 +24,18 @@ export const parameters = {
 	docs: {
 		theme,
 	},
+	options: {
+		storySort: {
+			order: [
+				'Design system',
+				'Design system/Colors',
+				'Design system/Fonts',
+				'Design system/Typography',
+				'Design system/Iconography',
+				'Design system/Other',
+				'Pages',
+				'Components',
+			],
+		},
+	},
 };

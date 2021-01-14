@@ -49,8 +49,9 @@ export const theme = {
 		background: '#f8f8f8',
 		text: {
 			DEFAULT: '#5b5b5b',
-			light: '#5A607F',
-			lighter: '#A2A2A2',
+			light: '#5a607f',
+			lighter: '#a2a2a2',
+			lightest: '#ffffff',
 		},
 		status: {
 			red: '#eb6060',
