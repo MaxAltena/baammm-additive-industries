@@ -3,13 +3,13 @@ import styled from 'styled-components';
 export const StyledPage = styled.div`
 	min-height: 100vh;
 	width: 100%;
-	font-family: ${(props) => props.theme.fonts.DEFAULT};
-	background-color: ${(props) => props.theme.background};
+	font-family: ${({ theme }) => theme.fonts.DEFAULT};
+	background-color: ${({ theme }) => theme.background};
 	display: flex;
 `;
 
 export const StyledLoginImage = styled.div`
-	background-color: ${(props) => props.theme.colors.primary.DEFAULT};
+	background-color: ${({ theme }) => theme.colors.primary.DEFAULT};
 	background-image: url('/assets/images/login.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -37,36 +37,36 @@ export const StyledLogo = styled.div`
 	background-size: contain;
 	background-position: center;
 	width: 100%;
-	min-height: ${(props) => `${props.theme.unit * 10}px`};
-	padding: ${(props) => `${props.theme.unit}px`};
-	margin-bottom: ${(props) => `${props.theme.unit * 4}px`};
+	min-height: ${({ theme }) => `${theme.unit * 10}px`};
+	padding: ${({ theme }) => `${theme.unit}px`};
+	margin-bottom: ${({ theme }) => `${theme.unit * 4}px`};
 `;
 
 export const StyledButton = styled.button`
-	background: ${(props) => props.theme.colors.accent.DEFAULT};
-	color: ${(props) => props.theme.colors.onAccent.DEFAULT};
-	border-radius: ${(props) => props.theme.borderRadius.DEFAULT};
+	background: ${({ theme }) => theme.colors.accent.DEFAULT};
+	color: ${({ theme }) => theme.colors.onAccent.DEFAULT};
+	border-radius: ${({ theme }) => theme.borderRadius.DEFAULT};
 	border: none;
 	cursor: pointer;
-	padding: ${(props) => `${props.theme.unit * 1}px ${props.theme.unit * 2}px`};
-	transition: ${(props) => props.theme.transition.DEFAULT};
-	margin-top: ${(props) => `${props.theme.unit * 4}px`};
+	padding: ${({ theme }) => `${theme.unit * 1}px ${theme.unit * 2}px`};
+	transition: ${({ theme }) => theme.transition.DEFAULT};
+	margin-top: ${({ theme }) => `${theme.unit * 4}px`};
 
 	&:hover,
 	&:active,
 	&:focus {
-		background: ${(props) => props.theme.colors.accent.hover};
-		color: ${(props) => props.theme.colors.onAccent.hover};
+		background: ${({ theme }) => theme.colors.accent.hover};
+		color: ${({ theme }) => theme.colors.onAccent.hover};
 	}
 `;
 
 export const StyledInput = styled.input`
 	border: none;
 	border-bottom-width: 2px;
-	border-bottom-color: ${(props) => props.theme.colors.primary.DEFAULT};
+	border-bottom-color: ${({ theme }) => theme.colors.primary.DEFAULT};
 	border-bottom-style: solid;
-	padding: ${(props) => `${props.theme.unit * 1.5}px ${props.theme.unit * 2}px`};
-	margin: ${(props) => `${props.theme.unit * 2}px 0`};
+	padding: ${({ theme }) => `${theme.unit * 1.5}px ${theme.unit * 2}px`};
+	margin: ${({ theme }) => `${theme.unit * 2}px 0`};
 	min-width: 75px;
 	width: 50%;
 	max-width: 450px;
@@ -76,25 +76,25 @@ export const StyledBottomForm = styled.div`
 	min-width: 75px;
 	width: 50%;
 	max-width: 450px;
-	margin: ${(props) => `${props.theme.unit * 1.5}px 0`};
+	margin: ${({ theme }) => `${theme.unit * 1.5}px 0`};
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 `;
 
 export const StyledCheckbox = styled.input`
-	margin-right: ${(props) => `${props.theme.unit * 1}px`};
+	margin-right: ${({ theme }) => `${theme.unit * 1}px`};
 `;
 
 export const StyledLink = styled.a`
-	color: ${(props) => props.theme.colors.link.DEFAULT};
+	color: ${({ theme }) => theme.colors.link.DEFAULT};
 	text-decoration: underline;
-	transition: ${(props) => props.theme.transition.DEFAULT};
+	transition: ${({ theme }) => theme.transition.DEFAULT};
 	cursor: pointer;
 
 	&:hover,
 	&:active,
 	&:focus {
-		color: ${(props) => props.theme.colors.link.hover};
+		color: ${({ theme }) => theme.colors.link.hover};
 	}
 `;

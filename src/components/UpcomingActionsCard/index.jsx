@@ -1,96 +1,70 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import {
 	StyledColumn,
 	StyledRow,
-	StyledUpcomingActionsCard,
-	StyledHighPriority,
-	StyledMediumPriority,
+	StyledCard,
+	StyledPriorityHigh,
+	StyledPriorityMedium,
+	StyledHeading3,
+	StyledHeading4,
+	StyledParagraph,
 	StyledXIcon,
 } from './styles.js';
 
-export const UpcomingActionsCard = () => {
+export const UpcomingActionsCard = ({
+	actions = [
+		{ action: 'Redill scalmalloy', machine: 'Machine 4', core: 'AM Core 1', priority: 'high' },
+		{ action: 'Refill inconel 718', machine: 'Machine 1', core: 'AM Core 3', priority: 'high' },
+		{ action: 'Collect print', machine: 'Machine 5', core: 'Storage module', priority: 'medium' },
+		{ action: 'Prepare print', machine: 'Machine 5', core: 'Controls module', priority: 'medium' },
+	],
+}) => {
 	return (
-		<StyledUpcomingActionsCard>
+		<StyledCard>
 			<StyledRow>
-				<h3 style={{ fontWeight: 'Frank New', fontSize: '28px', padding: '10px 10px 0px 10px', color: '#15143B' }}>
-					Upcoming actions
-				</h3>
+				<StyledHeading3>Upcoming actions</StyledHeading3>
 			</StyledRow>
 			<StyledRow>
 				<StyledColumn>
-					<h4 style={{ fontSize: '12px', padding: '10px 10px 0px 10px', color: '#141630' }}>ACTION</h4>
+					<StyledHeading4 uppercase>Action</StyledHeading4>
 				</StyledColumn>
 				<StyledColumn>
-					<h4 style={{ fontSize: '12px', padding: '10px 10px 0px 10px', color: '#141630' }}>MACHINE</h4>
+					<StyledHeading4 uppercase>Machine</StyledHeading4>
 				</StyledColumn>
 				<StyledColumn>
-					<h4 style={{ fontSize: '12px', padding: '10px 10px 0px 10px', color: '#141630' }}>CORE</h4>
+					<StyledHeading4 uppercase>Core</StyledHeading4>
 				</StyledColumn>
 				<StyledColumn>
-					<h4 style={{ fontSize: '12px', padding: '10px 10px 0px 10px', color: '#141630' }}>PRIORITY</h4>
+					<StyledHeading4 uppercase>PRIORITY</StyledHeading4>
 				</StyledColumn>
 			</StyledRow>
-			<StyledRow>
-				<StyledColumn>
-					<h3 style={{ fontSize: '14px', paddingLeft: '10px', color: '#5B5B5B' }}>Redill scalmalloy</h3>
-				</StyledColumn>
-				<StyledColumn>
-					<h3 style={{ fontSize: '14px', paddingLeft: '10px', color: '#5B5B5B' }}>Machine 4</h3>
-				</StyledColumn>
-				<StyledColumn>
-					<h3 style={{ fontSize: '14px', paddingLeft: '10px', color: '#5B5B5B' }}>AM Core 1</h3>
-				</StyledColumn>
-				<StyledColumn>
-					<StyledHighPriority style={{ fontSize: '14px', marginLeft: '10px' }}>High</StyledHighPriority>
-				</StyledColumn>
-				<StyledXIcon />
-			</StyledRow>
-			<StyledRow>
-				<StyledColumn>
-					<h3 style={{ fontSize: '14px', paddingLeft: '10px', color: '#5B5B5B' }}>Refill inconel 718</h3>
-				</StyledColumn>
-				<StyledColumn>
-					<h3 style={{ fontSize: '14px', paddingLeft: '10px', color: '#5B5B5B' }}>Machine 1</h3>
-				</StyledColumn>
-				<StyledColumn>
-					<h3 style={{ fontSize: '14px', paddingLeft: '10px', color: '#5B5B5B' }}>AM Core 3</h3>
-				</StyledColumn>
-				<StyledColumn>
-					<StyledHighPriority style={{ fontSize: '14px', marginLeft: '10px' }}>High</StyledHighPriority>
-				</StyledColumn>
-				<StyledXIcon />
-			</StyledRow>
-			<StyledRow>
-				<StyledColumn>
-					<h3 style={{ fontSize: '14px', paddingLeft: '10px', color: '#5B5B5B' }}>Collect print</h3>
-				</StyledColumn>
-				<StyledColumn>
-					<h3 style={{ fontSize: '14px', paddingLeft: '10px', color: '#5B5B5B' }}>Machine 5</h3>
-				</StyledColumn>
-				<StyledColumn>
-					<h3 style={{ fontSize: '14px', paddingLeft: '10px', color: '#5B5B5B' }}>Storage module</h3>
-				</StyledColumn>
-				<StyledColumn>
-					<StyledMediumPriority style={{ fontSize: '14px', marginLeft: '10px' }}>Medium</StyledMediumPriority>
-				</StyledColumn>
-				<StyledXIcon />
-			</StyledRow>
-			<StyledRow>
-				<StyledColumn>
-					<h3 style={{ fontSize: '14px', paddingLeft: '10px', color: '#5B5B5B' }}>Pripare print</h3>
-				</StyledColumn>
-				<StyledColumn>
-					<h3 style={{ fontSize: '14px', paddingLeft: '10px', color: '#5B5B5B' }}>Machine 5</h3>
-				</StyledColumn>
-				<StyledColumn>
-					<h3 style={{ fontSize: '14px', paddingLeft: '10px', color: '#5B5B5B' }}>Controls module</h3>
-				</StyledColumn>
-				<StyledColumn>
-					<StyledMediumPriority style={{ fontSize: '14px', marginLeft: '10px' }}>Medium</StyledMediumPriority>
-				</StyledColumn>
-				<StyledXIcon />
-			</StyledRow>
-		</StyledUpcomingActionsCard>
+			{actions.map((action, index) => (
+				<StyledRow key={index}>
+					<StyledColumn>
+						<StyledParagraph>{action.action}</StyledParagraph>
+					</StyledColumn>
+					<StyledColumn>
+						<StyledParagraph>{action.machine}</StyledParagraph>
+					</StyledColumn>
+					<StyledColumn>
+						<StyledParagraph>{action.core}</StyledParagraph>
+					</StyledColumn>
+					<StyledColumn>
+						{action.priority === 'high' ? (
+							<StyledPriorityHigh>High</StyledPriorityHigh>
+						) : (
+							<StyledPriorityMedium>Medium</StyledPriorityMedium>
+						)}
+					</StyledColumn>
+					<StyledXIcon size="24px" />
+				</StyledRow>
+			))}
+		</StyledCard>
 	);
+};
+
+UpcomingActionsCard.propTypes = {
+	actions: PropTypes.array,
 };

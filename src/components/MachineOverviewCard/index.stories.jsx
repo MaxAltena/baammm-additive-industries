@@ -3,7 +3,7 @@ import React from 'react';
 import { MachineOverviewCard } from '.';
 
 export default {
-	title: 'Components/MachineOverviewCard',
+	title: 'Components/Machine Overview Card',
 	component: MachineOverviewCard,
 	parameters: {
 		layout: 'fullscreen',

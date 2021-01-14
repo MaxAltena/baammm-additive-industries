@@ -54,7 +54,9 @@ export const theme = {
 		},
 		status: {
 			red: '#eb6060',
+			lighterRed: 'rgba(235,96,96,0.25)',
 			orange: '#FF5717',
+			lighterOrange: 'rgba(255,87,23,0.25)',
 			blue: '#1ea7fd',
 			green: '#4EDB90',
 		},
