@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sidebartab } from '../SideBarTab';
+import { Sidebartab } from './SideBarTab';
 
 import { SideBarStyledDiv } from './styles';
 import { StyledVector } from './styles';
