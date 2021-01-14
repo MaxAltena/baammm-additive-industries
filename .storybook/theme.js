@@ -33,7 +33,6 @@ export default create({
 	inputBorderRadius: 4,
 
 	brandTitle: 'BAAMMM – Additive Industries',
-	brandUrl: 'https://baammm-additive-industries.netlify.app/',
 	brandImage:
 		'https://raw.githubusercontent.com/MaxAltena/baammm-additive-industries/development/public/assets/vectors/baammm-logo.svg',
 });

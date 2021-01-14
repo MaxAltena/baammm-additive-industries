@@ -7,6 +7,7 @@ export const SideBarStyledDiv = styled.div`
 	padding: ${(props) => `${props.theme.unit}px`};
 	width: 300px;
 	height: 100vh;
+	display: block;
 `;
 
 export const StyledVector = styled.div`
@@ -15,7 +16,7 @@ export const StyledVector = styled.div`
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
-	width: 100%;
+	width: 80%;
+	margin: 0 28px 0 28px;
 	min-height: ${(props) => `${props.theme.unit * 6}px`};
-	padding: ${(props) => `${props.theme.unit}px`};
 `;
