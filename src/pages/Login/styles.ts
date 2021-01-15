@@ -42,24 +42,6 @@ export const StyledLogo = styled.div`
 	margin-bottom: ${({ theme }) => `${theme.unit * 4}px`};
 `;
 
-export const StyledButton = styled.button`
-	background: ${({ theme }) => theme.colors.accent.DEFAULT};
-	color: ${({ theme }) => theme.colors.onAccent.DEFAULT};
-	border-radius: ${({ theme }) => theme.borderRadius.DEFAULT};
-	border: none;
-	cursor: pointer;
-	padding: ${({ theme }) => `${theme.unit * 1}px ${theme.unit * 2}px`};
-	transition: ${({ theme }) => theme.transition.DEFAULT};
-	margin-top: ${({ theme }) => `${theme.unit * 4}px`};
-
-	&:hover,
-	&:active,
-	&:focus {
-		background: ${({ theme }) => theme.colors.accent.hover};
-		color: ${({ theme }) => theme.colors.onAccent.hover};
-	}
-`;
-
 export const StyledInput = styled.input`
 	border: none;
 	border-bottom-width: 2px;

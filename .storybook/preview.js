@@ -26,16 +26,7 @@ export const parameters = {
 	},
 	options: {
 		storySort: {
-			order: [
-				'Design system',
-				'Design system/Colors',
-				'Design system/Fonts',
-				'Design system/Typography',
-				'Design system/Iconography',
-				'Design system/Other',
-				'Pages',
-				'Components',
-			],
+			order: ['Introduction', 'README', 'Design system', 'Pages', 'Components'],
 		},
 	},
 };

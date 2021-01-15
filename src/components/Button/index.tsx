@@ -11,12 +11,13 @@ export const Button: React.FC<ButtonProps> = ({
 	size = 'medium',
 	backgroundColor,
 	label,
+	style,
 	...props
 }: ButtonProps) => {
 	const mode = primary ? 'primary' : 'secondary';
 
 	return (
-		<StyledButton className={[size, mode].join(' ')} style={{ backgroundColor }} {...props}>
+		<StyledButton className={[size, mode].join(' ')} style={{ ...style, backgroundColor }} {...props}>
 			{label}
 		</StyledButton>
 	);
