@@ -24,4 +24,9 @@ export const parameters = {
 	docs: {
 		theme,
 	},
+	options: {
+		storySort: {
+			order: ['Introduction', 'README', 'Design system', 'Pages', 'Components'],
+		},
+	},
 };

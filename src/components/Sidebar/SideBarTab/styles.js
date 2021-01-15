@@ -5,8 +5,8 @@ import { Archive } from '@styled-icons/feather';
 import { Calendar } from '@styled-icons/feather';
 
 export const SideBarTabStyledDiv = styled.div`
-	font-family: 'Open Sans';
-	background: ${(props) => `${props.theme.colors.primary.DEFAULT}`};
+	font-family: ${({ theme }) => theme.fonts.DEFAULT};
+	background: ${({ theme }) => theme.colors.primary.DEFAULT};
 	color: white;
 	width: 300px;
 	height: 48px;
@@ -25,7 +25,7 @@ export const StyledColumn = styled.div`
 	.content {
 		margin: 17px 0 0 5px;
 		text-align: center;
-		font-family: ${(props) => props.theme.fonts.text};
+		font-family: ${({ theme }) => theme.fonts.text};
 		font-size: 16px;
 	}
 	&:after {
@@ -37,28 +37,24 @@ export const StyledColumn = styled.div`
 
 export const StyledHomeIcon = styled(Home)`
 	float: left;
-	width: 32px;
-	height: 32px;
 	margin: 7px 15px 0px 35px;
+	stroke-width: ${({ theme }) => theme.icon.stroke.width};
 `;
 
 export const StyledMachineIcon = styled(Printer)`
 	float: left;
-	width: 32px;
-	height: 32px;
 	margin: 7px 15px 0px 35px;
+	stroke-width: ${({ theme }) => theme.icon.stroke.width};
 `;
 
 export const StyledCalendarIcon = styled(Calendar)`
 	float: left;
-	width: 32px;
-	height: 32px;
 	margin: 7px 15px 0px 35px;
+	stroke-width: ${({ theme }) => theme.icon.stroke.width};
 `;
 
 export const StyledArchiveIcon = styled(Archive)`
 	float: left;
-	width: 32px;
-	height: 32px;
 	margin: 7px 15px 0px 35px;
+	stroke-width: ${({ theme }) => theme.icon.stroke.width};
 `;

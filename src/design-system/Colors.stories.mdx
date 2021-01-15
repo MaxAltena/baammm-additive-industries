@@ -1,0 +1,40 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { theme } from 'src/styles';
+import { ColorGrid } from './helpers/ColorGrid';
+
+<Meta title="Design system/1. Colors" />
+
+<p>
+	<img
+		src="https://i.gyazo.com/afd3945f36445ebb977d4f48e21e08a9.png"
+		alt="Header image with Additive Industries logo in the center and BAAMMM logo in the bottom"
+	/>
+</p>
+
+# Colors
+
+`// TODO: Description of colors here`
+
+<ColorGrid
+	colors={[
+		{ backgroundColor: theme.colors.primary.DEFAULT, title: 'Primary', code: 'light' },
+		{ backgroundColor: theme.colors.secondary.DEFAULT, title: 'Secondary', code: 'light' },
+		{
+			backgroundColor: theme.colors.accent.DEFAULT,
+			title: 'Accent',
+			titleColor: theme.colors.onAccent.DEFAULT,
+			code: 'dark',
+		},
+		{ backgroundColor: theme.colors.status.red, title: 'Status red', code: 'dark' },
+		{ backgroundColor: theme.colors.status.orange, title: 'Status orange', code: 'dark' },
+		{ backgroundColor: theme.colors.status.green, title: 'Status green', code: 'dark' },
+		{ backgroundColor: theme.colors.status.blue, title: 'Status blue', code: 'dark' },
+		{ backgroundColor: theme.colors.link.DEFAULT, title: 'Link', code: 'dark' },
+		{
+			backgroundColor: theme.colors.background,
+			title: 'Background',
+			titleColor: theme.colors.text.DEFAULT,
+			code: 'dark',
+		},
+	]}
+/>

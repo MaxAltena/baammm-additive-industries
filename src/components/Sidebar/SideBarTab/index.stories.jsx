@@ -7,7 +7,7 @@ export default {
 	component: Sidebartab,
 };
 
-const Template = (props) => <Sidebartab {...props} />;
+const Template = (args) => <Sidebartab {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {};

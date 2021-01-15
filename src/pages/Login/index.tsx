@@ -6,13 +6,14 @@ import {
 	StyledPage,
 	StyledLoginImage,
 	StyledForm,
-	StyledButton,
 	StyledLogo,
 	StyledInput,
 	StyledLink,
 	StyledBottomForm,
 	StyledCheckbox,
 } from './styles';
+import { Button } from 'src/components';
+import { theme } from 'src/styles';
 
 /**
  * The login page for the Additive Industries product
@@ -37,9 +38,12 @@ export const Login: React.FC<LoginProps> = ({ withImage = true, withOptions = tr
 					</StyledBottomForm>
 				)}
 
-				<StyledButton type="submit" onClick={linkTo('Pages/Machine overview')}>
-					Login
-				</StyledButton>
+				<Button
+					primary
+					label="Login"
+					onClick={linkTo('Pages/Machine overview')}
+					style={{ marginTop: `${theme.unit * 4}px` }}
+				></Button>
 			</StyledForm>
 		</StyledPage>
 	);

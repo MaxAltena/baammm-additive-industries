@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import {
 	SideBarTabStyledDiv,
@@ -14,14 +15,14 @@ import {
  * SideBarTab
  */
 
-export const Sidebartab = (props) => {
+export const Sidebartab = ({ imgSource, title = 'Tab' }) => {
 	return (
 		<SideBarTabStyledDiv>
 			<StyledRow className="row">
 				<StyledColumn className="column">
-					{renderIcon(props.imgSource)}
+					{renderIcon(imgSource)}
 					<div className="content" style={{ float: 'left' }}>
-						<h3>{props.title}</h3>
+						<h3>{title}</h3>
 					</div>
 				</StyledColumn>
 			</StyledRow>
@@ -29,16 +30,16 @@ export const Sidebartab = (props) => {
 	);
 };
 
-export const renderIcon = (props) => {
-	switch (props) {
+export const renderIcon = (icon) => {
+	switch (icon) {
 		case 'homeicon':
-			return <StyledHomeIcon />;
+			return <StyledHomeIcon size="32px" />;
 		case 'machines':
-			return <StyledMachineIcon />;
+			return <StyledMachineIcon size="32px" />;
 		case 'planning':
-			return <StyledCalendarIcon />;
+			return <StyledCalendarIcon size="32px" />;
 		case 'history':
-			return <StyledArchiveIcon />;
+			return <StyledArchiveIcon size="32px" />;
 		default:
 			return null;
 	}

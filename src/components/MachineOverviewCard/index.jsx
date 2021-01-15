@@ -17,7 +17,7 @@ export const MachineOverviewCard = () => {
 		<div className="container" style={{ display: 'flex' }}>
 			<StyledMachineOverviewErrorCard>
 				<StyledStatusIndicatorError>
-					<StyledStatusIndicatorIcon />
+					<StyledStatusIndicatorIcon size="24px" />
 				</StyledStatusIndicatorError>
 				<h3 style={{ fontWeight: 'bold', fontSize: '21px', padding: '10px' }}>Machine 3</h3>
 				<h4 style={{ color: '#A2A2A2', fontSize: '14px', padding: '10px' }}>Core 3 | ME981_NL_54_3</h4>

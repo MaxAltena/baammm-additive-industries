@@ -1,3 +1,5 @@
+import { CSSProperties } from 'react';
+
 export interface ButtonProps {
 	/**
 	 * Is this the principal call to action on the page?
@@ -7,6 +9,10 @@ export interface ButtonProps {
 	 * What background color to use
 	 */
 	backgroundColor?: string;
+	/**
+	 * Additional styles
+	 */
+	style?: CSSProperties;
 	/**
 	 * How large should the button be?
 	 */
