@@ -1,7 +1,6 @@
 import React from 'react';
 import { CoreStatus, JobsCardProps, JobStatus, MachineCore } from './types';
 import {
-	StyledCard,
 	StyledCoreGrid,
 	StyledCoreName,
 	StyledProgressBarContainer,
@@ -9,8 +8,9 @@ import {
 	StyledProgressBarOutside,
 	StyledProgressContainer,
 	StyledTextDiv,
-	StyledTitle,
 } from './styles';
+import { Heading } from '../Heading';
+import { Card } from '../Card';
 
 function getCoreStatus(status: CoreStatus) {
 	switch (status) {
@@ -51,12 +51,14 @@ function renderProgressBar(core: MachineCore) {
 }
 
 /**
- * The login page for the Additive Industries product
+ * The jobs card showcasing core progress of a specific machine
  */
 export const JobsCard: React.FC<JobsCardProps> = ({ cores }: JobsCardProps) => {
 	return (
-		<StyledCard>
-			<StyledTitle>Jobs</StyledTitle>
+		<Card>
+			<Heading type="subtitle" style={{ marginBottom: '28px' }}>
+				Jobs
+			</Heading>
 
 			<StyledCoreGrid>
 				{cores.map((core) => {
@@ -69,6 +71,6 @@ export const JobsCard: React.FC<JobsCardProps> = ({ cores }: JobsCardProps) => {
 					);
 				})}
 			</StyledCoreGrid>
-		</StyledCard>
+		</Card>
 	);
 };

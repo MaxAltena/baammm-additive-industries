@@ -9,11 +9,6 @@ export const StyledPage = styled.div`
 	display: flex;
 `;
 
-export const StyledTitle = styled.h1`
-	margin: 0;
-	font-family: ${(props) => props.theme.fonts.heading};
-`;
-
 export const StyledBell = styled(Bell)`
 	color: ${(props) => props.theme.colors.secondary.DEFAULT};
 	padding: ${(props) => `${props.theme.unit}px`};

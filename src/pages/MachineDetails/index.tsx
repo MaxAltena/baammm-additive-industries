@@ -1,18 +1,11 @@
 import React from 'react';
 
 import { MachineDetailsProps } from './types';
-import {
-	StyledBell,
-	StyledCardImage,
-	StyledContent,
-	StyledMainContent,
-	StyledPage,
-	StyledTitle,
-	StyledTopBar,
-} from './styles';
+import { StyledBell, StyledCardImage, StyledContent, StyledMainContent, StyledPage, StyledTopBar } from './styles';
 import { Sidebar } from '../../components/Sidebar';
-import { Button } from '../../components/Button';
+import { Button } from '../../components';
 import { JobsCard } from '../../components/JobsCard';
+import { Heading } from '../../components/Heading';
 
 /**
  * Machine details page
@@ -23,7 +16,7 @@ export const MachineDetails: React.FC<MachineDetailsProps> = ({ machine }: Machi
 			<Sidebar />
 			<StyledContent>
 				<StyledTopBar>
-					<StyledTitle>{machine.name} – Details</StyledTitle>
+					<Heading>{machine.name} – Details</Heading>
 					<StyledBell />
 				</StyledTopBar>
 

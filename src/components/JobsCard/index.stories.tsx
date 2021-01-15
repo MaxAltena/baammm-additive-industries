@@ -7,9 +7,6 @@ import { CoreStatus, JobsCardProps, JobStatus } from './types';
 export default {
 	title: 'Components / Jobs Card',
 	component: JobsCard,
-	parameters: {
-		layout: 'fullscreen',
-	},
 } as Meta;
 
 const Template: Story<JobsCardProps> = (args) => <JobsCard {...args} />;

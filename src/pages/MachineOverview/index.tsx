@@ -2,8 +2,9 @@ import React from 'react';
 import { linkTo } from '@storybook/addon-links';
 
 import { MachineOverviewProps } from './types';
-import { StyledPage, StyledTitle, StyledBell, StyledLink } from './styles';
+import { StyledBell, StyledLink, StyledPage } from './styles';
 import { Sidebar } from '../../components/Sidebar';
+import { Heading } from '../../components/Heading';
 
 /**
  * Machine overview page
@@ -13,7 +14,7 @@ export const MachineOverview: React.FC<MachineOverviewProps> = () => {
 		<StyledPage>
 			<Sidebar />
 			<StyledLink onClick={linkTo('Pages/Login')}>logout</StyledLink>
-			<StyledTitle>Machine overview</StyledTitle>
+			<Heading>Machine overview</Heading>
 			<StyledBell />
 		</StyledPage>
 	);

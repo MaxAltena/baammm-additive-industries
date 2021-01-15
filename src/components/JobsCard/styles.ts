@@ -1,21 +1,5 @@
 import styled from 'styled-components';
 
-export const StyledCard = styled.div`
-	font-family: ${(props) => props.theme.fonts.text};
-	background-color: ${(props) => `${props.theme.colors.DEFAULT}`};
-	box-shadow: ${(props) => `${props.theme.shadows.md}`};
-	padding: ${(props) => `${props.theme.unit * 2}px`};
-	border-radius: ${(props) => `${props.theme.borderRadius.DEFAULT}`};
-	margin: 20px 0;
-`;
-
-export const StyledTitle = styled.h2`
-	margin: 0 0 28px;
-	font-family: ${(props) => props.theme.fonts.heading};
-	font-size: 20px;
-	font-weight: bold;
-`;
-
 export const StyledCoreGrid = styled.div`
 	display: grid;
 	grid-template-columns: auto auto minmax(50%, 4fr);
