@@ -1,9 +1,9 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
 
+import { CoreStatus, JobStatus } from 'src/components';
 import { MachineDetails } from '.';
 import { MachineDetailsProps } from './types';
-import { CoreStatus, JobStatus } from '../../components/JobsCard/types';
 
 export default {
 	title: 'Pages/Machine details',
