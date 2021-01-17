@@ -8,7 +8,7 @@
 
 > 🗃 BAAMMM Additive Industries Design System
 
-This is where the description should be.
+**BAAMMM💥**, a group of students from Fontys School of ICT, have created this Storybook repository to share various components of the design created for Additive Industries, during our minor of Interaction Design at the same school.
 
 - https://www.learnstorybook.com/design-systems-for-developers/react/en/introduction/
 
