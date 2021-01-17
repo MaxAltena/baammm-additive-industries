@@ -1,4 +1,7 @@
 import { Meta } from '@storybook/addon-docs/blocks';
+import * as StyledIconsFeather from '@styled-icons/feather';
+import { IconGrid, Value } from './helpers';
+import { theme } from 'src/styles';
 
 <Meta title="Design system/3. Iconography" />
 
@@ -11,4 +14,6 @@ import { Meta } from '@storybook/addon-docs/blocks';
 
 # Iconography
 
-`// TODO: Something about iconography here`
+For all the icons used, the [Feather Icons](https://feathericons.com/) should be used. In addition to this, a stroke width of <Value value={theme.icon.stroke.width} /> for the icons should be applied.
+
+<IconGrid icons={StyledIconsFeather} />
