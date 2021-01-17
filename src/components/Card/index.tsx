@@ -5,6 +5,6 @@ import { StyledCard } from './styles';
 /**
  * Generic card
  */
-export const Card: React.FC<CardProps> = ({ children }: CardProps) => {
-	return <StyledCard>{children}</StyledCard>;
+export const Card: React.FC<CardProps> = ({ style, children }: CardProps) => {
+	return <StyledCard style={style}>{children}</StyledCard>;
 };

@@ -4,13 +4,12 @@ import {
 	StyledCoreGrid,
 	StyledCoreName,
 	StyledProgressBarContainer,
-	StyledProgressBarInside,
-	StyledProgressBarOutside,
 	StyledProgressContainer,
 	StyledTextDiv,
 } from './styles';
 import { Heading } from '../Heading';
 import { Card } from '../Card';
+import { ProgressBar } from '../ProgressBar';
 
 function getCoreStatus(status: CoreStatus) {
 	switch (status) {
@@ -38,9 +37,7 @@ function renderProgressBar(core: MachineCore) {
 		return (
 			<StyledProgressContainer>
 				<StyledProgressBarContainer>
-					<StyledProgressBarOutside>
-						<StyledProgressBarInside style={{ width: `${core.job.processCompleted}%` }} />
-					</StyledProgressBarOutside>
+					<ProgressBar percentage={core.job.processCompleted} />
 				</StyledProgressBarContainer>
 				{core.job.timeRemaining} remaining
 			</StyledProgressContainer>
