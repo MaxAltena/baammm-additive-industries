@@ -1,4 +1,8 @@
 import { Meta } from '@storybook/addon-docs/blocks';
+import { theme } from 'src/styles';
+import { Heading } from '../components/Heading';
+import { ThemeProvider } from 'styled-components';
+import { Card } from '../components/Card';
 
 <Meta title="Design system/3. Typography" />
 
@@ -11,4 +15,27 @@ import { Meta } from '@storybook/addon-docs/blocks';
 
 # Typography
 
-`// TODO: Something about typography here`
+## Fonts
+
+The font Frank New is used for headings, combined with Open Sans for content and longreads.
+Titles have a font size of 30px, whereas subtitles have 20px and regular text is sized at 15px.
+
+Headings stand out because of their font size and font weight, making it clear to the user that the text marks the start of a new section.
+
+<ThemeProvider theme={theme}>
+	<Heading>
+		Title – Frank New&nbsp;<span style={{ color: theme.colors.text.lighter }}>30px</span>
+	</Heading>
+	<Heading type="subtitle">
+		Subtitle – Frank New&nbsp;<span style={{ color: theme.colors.text.lighter }}>20px</span>
+	</Heading>
+	<Card>
+		<Heading type="subtitle" fontSize="16px">
+			Card title – Frank New &nbsp;<span style={{ color: theme.colors.text.lighter }}>16px</span>
+		</Heading>
+		Text – Open Sans&nbsp;<span style={{ color: theme.colors.text.lighter }}>15px</span>
+		<br />
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus asperiores autem distinctio id ipsam ipsum laudantium
+		magnam magni minus nihil rem repudiandae sapiente similique sint? Amet dolore et quos?
+	</Card>
+</ThemeProvider>

@@ -6,6 +6,11 @@ export const theme = {
 		text: `'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif`,
 		heading: `'Frank New', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif`,
 	},
+	fontSize: {
+		DEFAULT: '15px',
+		title: '30px',
+		subtitle: '20px',
+	},
 	transition: {
 		DEFAULT: 'all 200ms ease-in-out',
 		timing: 'ease-in-out',

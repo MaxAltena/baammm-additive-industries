@@ -9,12 +9,6 @@ export const StyledPage = styled.div`
 	display: flex;
 `;
 
-export const StyledTitle = styled.h1`
-	margin: 0;
-	padding: ${({ theme }) => `${theme.unit * 2}px`};
-	font-family: ${({ theme }) => theme.fonts.heading};
-`;
-
 export const StyledBell = styled(Bell)`
 	color: ${({ theme }) => theme.colors.secondary.DEFAULT};
 	padding: ${({ theme }) => `${theme.unit}px`};
