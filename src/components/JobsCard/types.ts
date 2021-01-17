@@ -1,12 +1,13 @@
+/* eslint-disable no-unused-vars */
 export enum JobStatus {
-	Queued,
-	Printing,
+	Queued = 'QUEUED',
+	Printing = 'PRINTING',
 }
 
 export enum CoreStatus {
-	Idle,
-	Active,
-	Errored,
+	Idle = 'IDLE',
+	Active = 'ACTIVE',
+	Errored = 'ERRORED',
 }
 
 interface PrintJob {
