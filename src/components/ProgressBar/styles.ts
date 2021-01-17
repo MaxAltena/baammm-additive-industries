@@ -8,8 +8,8 @@ export const StyledProgressBarOutside = styled.div`
 
 export const StyledProgressBarInside = styled.div`
 	height: 100%;
-	border-radius: ${(props) => `${props.theme.borderRadius.DEFAULT}`};
-	background-color: ${(props) => `${props.theme.colors.primary.DEFAULT}`};
+	border-radius: ${({ theme }) => `${theme.borderRadius.DEFAULT}`};
+	background-color: ${({ theme }) => `${theme.colors.primary.DEFAULT}`};
 	position: relative;
 	overflow: hidden;
 `;
