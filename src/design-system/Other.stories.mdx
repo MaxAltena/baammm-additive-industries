@@ -1,4 +1,10 @@
 import { Meta } from '@storybook/addon-docs/blocks';
+import { ThemeProvider } from 'styled-components';
+import { theme } from 'src/styles';
+import { Card } from '../components/Card';
+import { Heading } from '../components/Heading';
+import { ProgressBar } from '../components/ProgressBar';
+import { Button } from '../components';
 
 <Meta title="Design system/5. Other" />
 
@@ -11,4 +17,46 @@ import { Meta } from '@storybook/addon-docs/blocks';
 
 # Other
 
-`// TODO: Something about other here`
+## Card
+
+In order to group items visually, cards can be used. Cards are simply rectangles with added drop shadows,
+giving the impression that the content of this card belongs together and is part of the foreground of the application.
+
+<ThemeProvider theme={theme}>
+	<Card style={{ maxWidth: '500px' }}>
+		<Heading type="subtitle">Machine controls</Heading>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci, aliquid amet aspernatur consequuntur delectus
+		eius error et explicabo fuga inventore itaque iure quasi quidem, quis quo sint temporibus veritatis.
+	</Card>
+</ThemeProvider>
+
+## Button
+
+The button is a simple but important interface element that clearly gives users an indication
+that they can perform certain actions.
+
+<ThemeProvider theme={theme}>
+	<Button label="Start Print" primary={true} onClick={() => alert('Print job has started on Machine 1')} />
+	&nbsp;
+	<Button label="Cancel" onClick={() => alert('Print job has been canceled')} />
+	&nbsp;
+	<Button
+		label="Turn off"
+		size="small"
+		primary={true}
+		backgroundColor={theme.colors.status.red}
+		onClick={() => alert('Machine 1 has been shut down')}
+	/>
+</ThemeProvider>
+
+## Progress bar
+
+To indicate the status of a certain process that might take a while, progress bars are used.
+The progress bar gives users a clear indication of how far along a certain process has come.
+It is recommended to accompany a progress bar with an indication of when the process is due to be finished.
+
+<ThemeProvider theme={theme}>
+	<ProgressBar percentage={30} />
+	<br />
+	<ProgressBar percentage={66} />
+</ThemeProvider>
