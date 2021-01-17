@@ -3,19 +3,9 @@ import styled from 'styled-components';
 import { theme } from 'src/styles';
 
 export const StyledContainer = styled.div`
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-
-	> * {
-		width: 30%;
-		margin: 0 2em 2em 0;
-
-		&:nth-child(3n),
-		&:last-child {
-			margin: 0 0 2em 0;
-		}
-	}
+	display: grid;
+	gap: 2em;
+	grid-template-columns: repeat(3, 1fr);
 `;
 
 export const StyledCard = styled.div`
