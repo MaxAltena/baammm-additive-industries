@@ -1,4 +1,4 @@
-![Header image with Additive Industries logo in the center and BAAMMM logo in the bottom](https://i.gyazo.com/afd3945f36445ebb977d4f48e21e08a9.png)
+![Header image with Additive Industries logo in the center and BAAMMM logo in the bottom](https://raw.githubusercontent.com/MaxAltena/baammm-additive-industries/development/.github/header-image.png)
 
 # [BAAMMM – Additive Industries][link:baammm-additive-industries]
 
