@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const StyledCoreGrid = styled.div`
 	display: grid;
 	grid-template-columns: auto auto minmax(50%, 4fr);
-	grid-gap: ${(props) => `${props.theme.unit * 2}px`};
-	margin-bottom: ${(props) => `${props.theme.unit}px`};
+	grid-gap: ${({ theme }) => `${theme.unit * 2}px`};
+	margin-bottom: ${({ theme }) => `${theme.unit}px`};
 `;
 
 export const StyledCoreName = styled.div`
@@ -12,13 +12,13 @@ export const StyledCoreName = styled.div`
 `;
 
 export const StyledTextDiv = styled.div`
-	color: ${(props) => props.theme.colors.text.DEFAULT};
+	color: ${({ theme }) => theme.colors.text.DEFAULT};
 `;
 
 export const StyledProgressContainer = styled.div`
 	display: flex;
 	align-items: center;
-	margin-left: ${(props) => `${props.theme.unit * 7}px`};
+	margin-left: ${({ theme }) => `${theme.unit * 7}px`};
 `;
 
 export const StyledProgressBarContainer = styled.div`

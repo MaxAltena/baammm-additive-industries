@@ -1,10 +1,9 @@
 import React from 'react';
 import { linkTo } from '@storybook/addon-links';
 
+import { Sidebar, Heading } from 'src/components';
 import { MachineOverviewProps } from './types';
 import { StyledBell, StyledLink, StyledPage } from './styles';
-import { Sidebar } from '../../components/Sidebar';
-import { Heading } from '../../components/Heading';
 
 /**
  * Machine overview page

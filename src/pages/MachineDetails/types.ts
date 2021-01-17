@@ -1,4 +1,4 @@
-import { MachineCore } from '../../components/JobsCard/types';
+import { MachineCore } from 'src/components';
 
 interface Machine {
 	name: string;

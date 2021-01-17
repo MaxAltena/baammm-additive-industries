@@ -1,4 +1,6 @@
 import React from 'react';
+
+import { Heading, Card, ProgressBar } from 'src/components';
 import { CoreStatus, JobsCardProps, JobStatus, MachineCore } from './types';
 import {
 	StyledCoreGrid,
@@ -7,9 +9,6 @@ import {
 	StyledProgressContainer,
 	StyledTextDiv,
 } from './styles';
-import { Heading } from '../Heading';
-import { Card } from '../Card';
-import { ProgressBar } from '../ProgressBar';
 
 function getCoreStatus(status: CoreStatus) {
 	switch (status) {
@@ -71,3 +70,5 @@ export const JobsCard: React.FC<JobsCardProps> = ({ cores }: JobsCardProps) => {
 		</Card>
 	);
 };
+
+export * from './types';

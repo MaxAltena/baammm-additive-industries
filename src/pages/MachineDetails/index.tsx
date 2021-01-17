@@ -1,11 +1,8 @@
 import React from 'react';
 
+import { Sidebar, Button, JobsCard, Heading } from 'src/components';
 import { MachineDetailsProps } from './types';
 import { StyledBell, StyledCardImage, StyledContent, StyledMainContent, StyledPage, StyledTopBar } from './styles';
-import { Sidebar } from '../../components/Sidebar';
-import { Button } from '../../components';
-import { JobsCard } from '../../components/JobsCard';
-import { Heading } from '../../components/Heading';
 
 /**
  * Machine details page
